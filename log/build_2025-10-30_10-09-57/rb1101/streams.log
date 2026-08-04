@@ -1,0 +1,17 @@
+[1.706s] Invoking command in '/home/lujianyi/Documents/rb1101/build/rb1101': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lujianyi/Documents/rb1101/build/rb1101/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lujianyi/Documents/rb1101/install/rb1101/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lujianyi/Documents/rb1101/build/rb1101/build --no-deps symlink_data
+[2.546s] running develop
+[2.960s] running egg_info
+[3.007s] writing rb1101.egg-info/PKG-INFO
+[3.007s] writing dependency_links to rb1101.egg-info/dependency_links.txt
+[3.008s] writing entry points to rb1101.egg-info/entry_points.txt
+[3.008s] writing requirements to rb1101.egg-info/requires.txt
+[3.008s] writing top-level names to rb1101.egg-info/top_level.txt
+[3.092s] reading manifest file 'rb1101.egg-info/SOURCES.txt'
+[3.096s] writing manifest file 'rb1101.egg-info/SOURCES.txt'
+[3.142s] running build_ext
+[3.143s] Creating /home/lujianyi/Documents/rb1101/install/rb1101/lib/python3.12/site-packages/rb1101.egg-link (link to .)
+[3.144s] Installing wall_following script to /home/lujianyi/Documents/rb1101/install/rb1101/lib/rb1101
+[3.145s] 
+[3.145s] Installed /home/lujianyi/Documents/rb1101/build/rb1101
+[3.145s] running symlink_data
+[3.227s] Invoked command in '/home/lujianyi/Documents/rb1101/build/rb1101' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lujianyi/Documents/rb1101/build/rb1101/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lujianyi/Documents/rb1101/install/rb1101/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lujianyi/Documents/rb1101/build/rb1101/build --no-deps symlink_data

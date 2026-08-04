@@ -1,0 +1,63 @@
+[0.558s] Invoking command in '/home/lujianyi/Documents/rb1101/build/rb1101_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lujianyi/Documents/rb1101/build/rb1101_gz -- -j20 -l20
+[0.650s] Invoked command in '/home/lujianyi/Documents/rb1101/build/rb1101_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lujianyi/Documents/rb1101/build/rb1101_gz -- -j20 -l20
+[0.667s] Invoking command in '/home/lujianyi/Documents/rb1101/build/rb1101_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lujianyi/Documents/rb1101/build/rb1101_gz
+[0.680s] -- Install configuration: ""
+[0.680s] -- Execute custom install script
+[0.681s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//launch/rb1101_gazebo.launch.py
+[0.682s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/ball_wheel_link.STL
+[0.682s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_camera_link.STL
+[0.682s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_laser_link.STL
+[0.682s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_link.STL
+[0.682s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/imu.STL
+[0.682s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/left_wheel_link.STL
+[0.683s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/back_left_wheel_link.STL
+[0.683s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/back_right_wheel_link.STL
+[0.683s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_camera_link.STL
+[0.684s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_laser_link.STL
+[0.684s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_link.STL
+[0.684s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/front_left_wheel_link.STL
+[0.685s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/front_right_wheel_link.STL
+[0.685s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/imu.STL
+[0.686s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/ball_wheel_link.STL
+[0.686s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_camera_link.STL
+[0.686s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_laser_link.STL
+[0.686s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_link.STL
+[0.687s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/imu.STL
+[0.687s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/left_wheel_link.STL
+[0.687s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/right_wheel_link.STL
+[0.687s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/materials/textures/plywood256x256.png
+[0.687s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/meshes/nist_maze_wall_120.dae
+[0.688s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_2.sdf
+[0.688s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_3.sdf
+[0.688s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_4.sdf
+[0.688s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model.config
+[0.688s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model.sdf
+[0.689s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/1.png
+[0.689s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/2.png
+[0.689s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/3.png
+[0.689s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/4.png
+[0.689s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/5.png
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/right_wheel_link.STL
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar.gazebo.xacro
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar.urdf.xacro
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar_description.urdf
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//rviz/rb1101.rviz
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//worlds/empty.sdf
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//worlds/rb1101_world.sdf
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/package_run_dependencies/rb1101_gz
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/parent_prefix_path/rb1101_gz
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/ament_prefix_path.sh
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/ament_prefix_path.dsv
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/path.sh
+[0.690s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/path.dsv
+[0.691s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.bash
+[0.691s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.sh
+[0.691s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.zsh
+[0.691s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.dsv
+[0.691s] -- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/package.dsv
+[0.703s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/packages/rb1101_gz
+[0.703s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.703s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/rb1101_gzConfig.cmake
+[0.703s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/rb1101_gzConfig-version.cmake
+[0.703s] -- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/package.xml
+[0.706s] Invoked command in '/home/lujianyi/Documents/rb1101/build/rb1101_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lujianyi/Documents/rb1101/build/rb1101_gz

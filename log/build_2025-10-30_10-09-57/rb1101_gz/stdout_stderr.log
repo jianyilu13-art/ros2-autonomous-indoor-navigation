@@ -1,0 +1,59 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//launch/rb1101_gazebo.launch.py
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/ball_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_camera_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_laser_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/imu.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/left_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/back_left_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/back_right_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_camera_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_laser_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/front_left_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/front_right_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/imu.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/ball_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_camera_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_laser_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/imu.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/left_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/right_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/materials/textures/plywood256x256.png
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/meshes/nist_maze_wall_120.dae
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_2.sdf
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_3.sdf
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_4.sdf
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model.config
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model.sdf
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/1.png
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/2.png
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/3.png
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/4.png
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/5.png
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/right_wheel_link.STL
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar.gazebo.xacro
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar.urdf.xacro
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar_description.urdf
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//rviz/rb1101.rviz
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//worlds/empty.sdf
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//worlds/rb1101_world.sdf
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/package_run_dependencies/rb1101_gz
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/parent_prefix_path/rb1101_gz
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/path.sh
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/path.dsv
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.bash
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.sh
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.zsh
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.dsv
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/package.dsv
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/packages/rb1101_gz
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/rb1101_gzConfig.cmake
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/rb1101_gzConfig-version.cmake
+-- Up-to-date symlink: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/package.xml

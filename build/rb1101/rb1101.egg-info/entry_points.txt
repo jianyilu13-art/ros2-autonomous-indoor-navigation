@@ -1,0 +1,2 @@
+[console_scripts]
+wall_following = rb1101.wall_following:main

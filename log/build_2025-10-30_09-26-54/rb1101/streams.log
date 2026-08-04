@@ -1,0 +1,24 @@
+[1.006s] Invoking command in '/home/lujianyi/Documents/rb1101/build/rb1101': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lujianyi/Documents/rb1101/build/rb1101/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lujianyi/Documents/rb1101/install/rb1101/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lujianyi/Documents/rb1101/build/rb1101/build --no-deps symlink_data
+[1.402s] running develop
+[1.631s] running egg_info
+[1.632s] creating rb1101.egg-info
+[1.653s] writing rb1101.egg-info/PKG-INFO
+[1.654s] writing dependency_links to rb1101.egg-info/dependency_links.txt
+[1.654s] writing entry points to rb1101.egg-info/entry_points.txt
+[1.654s] writing requirements to rb1101.egg-info/requires.txt
+[1.654s] writing top-level names to rb1101.egg-info/top_level.txt
+[1.654s] writing manifest file 'rb1101.egg-info/SOURCES.txt'
+[1.699s] reading manifest file 'rb1101.egg-info/SOURCES.txt'
+[1.700s] writing manifest file 'rb1101.egg-info/SOURCES.txt'
+[1.724s] running build_ext
+[1.724s] Creating /home/lujianyi/Documents/rb1101/install/rb1101/lib/python3.12/site-packages/rb1101.egg-link (link to .)
+[1.725s] Installing wall_following script to /home/lujianyi/Documents/rb1101/install/rb1101/lib/rb1101
+[1.725s] 
+[1.725s] Installed /home/lujianyi/Documents/rb1101/build/rb1101
+[1.725s] running symlink_data
+[1.725s] creating /home/lujianyi/Documents/rb1101/install/rb1101/share/ament_index
+[1.725s] creating /home/lujianyi/Documents/rb1101/install/rb1101/share/ament_index/resource_index
+[1.725s] creating /home/lujianyi/Documents/rb1101/install/rb1101/share/ament_index/resource_index/packages
+[1.725s] symbolically linking /home/lujianyi/Documents/rb1101/build/rb1101/resource/rb1101 -> /home/lujianyi/Documents/rb1101/install/rb1101/share/ament_index/resource_index/packages
+[1.725s] symbolically linking /home/lujianyi/Documents/rb1101/build/rb1101/package.xml -> /home/lujianyi/Documents/rb1101/install/rb1101/share/rb1101
+[1.759s] Invoked command in '/home/lujianyi/Documents/rb1101/build/rb1101' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lujianyi/Documents/rb1101/build/rb1101/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lujianyi/Documents/rb1101/install/rb1101/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lujianyi/Documents/rb1101/build/rb1101/build --no-deps symlink_data

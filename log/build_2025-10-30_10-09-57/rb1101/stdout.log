@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing rb1101.egg-info/PKG-INFO
+writing dependency_links to rb1101.egg-info/dependency_links.txt
+writing entry points to rb1101.egg-info/entry_points.txt
+writing requirements to rb1101.egg-info/requires.txt
+writing top-level names to rb1101.egg-info/top_level.txt
+reading manifest file 'rb1101.egg-info/SOURCES.txt'
+writing manifest file 'rb1101.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lujianyi/Documents/rb1101/install/rb1101/lib/python3.12/site-packages/rb1101.egg-link (link to .)
+Installing wall_following script to /home/lujianyi/Documents/rb1101/install/rb1101/lib/rb1101
+
+Installed /home/lujianyi/Documents/rb1101/build/rb1101
+running symlink_data

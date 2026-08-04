@@ -1,0 +1,77 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/lujianyi/Documents/rb1101/build/rb1101_gz
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//launch/rb1101_gazebo.launch.py
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/ball_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_camera_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_laser_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/base_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/imu.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/left_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/back_left_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/back_right_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_camera_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_laser_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/base_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/front_left_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/front_right_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanocar/imu.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/ball_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_camera_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_laser_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/base_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/imu.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/left_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nanorobot/right_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/materials/textures/plywood256x256.png
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/meshes/nist_maze_wall_120.dae
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_2.sdf
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_3.sdf
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model-1_4.sdf
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model.config
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/model.sdf
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/1.png
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/2.png
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/3.png
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/4.png
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/nist maze wall 120/3/thumbnails/5.png
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//meshes/right_wheel_link.STL
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar.gazebo.xacro
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar.urdf.xacro
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//urdf/nanocar_description.urdf
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//rviz/rb1101.rviz
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//worlds/empty.sdf
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz//worlds/rb1101_world.sdf
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/package_run_dependencies/rb1101_gz
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/parent_prefix_path/rb1101_gz
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/ament_prefix_path.sh
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/path.sh
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/environment/path.dsv
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.bash
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.sh
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.zsh
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/local_setup.dsv
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/package.dsv
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/ament_index/resource_index/packages/rb1101_gz
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/rb1101_gzConfig.cmake
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/cmake/rb1101_gzConfig-version.cmake
+-- Symlinking: /home/lujianyi/Documents/rb1101/install/rb1101_gz/share/rb1101_gz/package.xml

@@ -1,0 +1,4 @@
+source;share/rb1101_gz/local_setup.bash
+source;share/rb1101_gz/local_setup.dsv
+source;share/rb1101_gz/local_setup.sh
+source;share/rb1101_gz/local_setup.zsh
