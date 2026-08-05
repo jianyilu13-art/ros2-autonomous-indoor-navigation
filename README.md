@@ -78,9 +78,8 @@ Possible improvements:
 * Finite State Machine (FSM)
 * Recovery behaviour
 * Adaptive speed control
-* Doorway detection
+* PID controller
 * Improved corner handling
-* ---
 
 ---
 
@@ -94,7 +93,6 @@ Possible improvements:
 * Room entrance detection
 * Corner classification
 * Local topology extraction
-* ---
 
 ---
 
@@ -108,7 +106,6 @@ Possible improvements:
 * Local memory
 * Landmark management
 * Graph representation
-* ---
 
 ---
 
@@ -123,7 +120,6 @@ Possible improvements:
 * Navigation2
 * A* path planning
 * Goal-directed navigation
-* ---
 
 ---
 
@@ -147,20 +143,31 @@ Status: 🚧 Ongoing
 
 ## Objective
 
+Establish a reliable baseline controller from the original RB1101 wall-following implementation, then extend it with improved decision-making strategies for autonomous maze navigation.
+
 ---
 
 ## Planned Features
 
-* ---
-* ---
-* ---
+* Fix and validate the original wall-following controller behaviour
+* Implement alternative controller versions for comparison:
+  - FSM-based behaviour control
+  - Improved corner handling
+  - PID-based distance regulation
+* Evaluate performance in Gazebo spiral maze simulation
+
+---
 
 ## Progress
 
-* [ ] Design
-* [ ] Implementation
-* [ ] Testing
-* [ ] Documentation
+* [x] Import RB1101 baseline project
+* [x] Analyze existing wall-following controller
+* [ ] Fix baseline implementation issues
+* [ ] Create FSM-based controller version
+* [ ] Implement improved corner handling
+* [ ] Implement PID controller version
+* [ ] Test and compare different approaches
+* [ ] Document results
 
 ---
 
