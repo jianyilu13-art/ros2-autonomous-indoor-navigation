@@ -1,36 +1,287 @@
-# RB1101 Project #
-Wall-Following Project for NUS RB1101 Fundamentals of Robotics I 
+# ROS2 Autonomous Indoor Navigation *(Ongoing)*
 
-## Instructions ##
-1. Extract compressed rb1101 folder to desired directory. The following steps assume you extracted to ~/Documents/ (where ~/ is a shortcut for home/user/)
-2. Change directory to extracted folder then colcon build. In terminal, enter the following commands: \
-`cd ~/Documents/rb1101` \
-`colcon build --symlink-install`
+> **An ongoing robotics project that extends the NUS RB1101 Fundamentals of Robotics wall-following laboratory into a progressively more intelligent autonomous indoor navigation system.**
 
-3. Assign permission to run shell scripts in terminal. You only need to do this once on each computer/account. \
-`chmod +x *.sh`
+---
 
-4. Start the gazebo sim in a terminal. The following command changes directory to the location of your workspace, then runs the Gazebo shell script. \
-`cd ~/Documents/rb1101 && ./gz_heading.sh`
-   
-5. In **another** terminal, run your wall-following script. \
-`cd ~/Documents/rb1101 && ./wall_following.sh`
-* The default behaviour is left wall-following. Add your modifications to the timer_callback() function of WallFollowingNode() class, in the file `src/rb1101/wall_following.py`.
+# Overview
 
-6. When running wall-following in real life, remember to set the parameter `is_simulation` to `False` in `wall_following.py`.
+This repository documents my journey of transforming a basic reactive mobile robot into an increasingly capable autonomous indoor robot.
 
-## Objectives ##
-1. Implement wall-following with heading such that the robot will be able to turn right if there's a corner on the back-right, and allow the robot to strive towards facing heading = 0 (initial heading). To test if this works, run Gazebo with the following shell script: \
-`cd ~/Documents/rb1101 && ./gz_heading.sh`
+The project **starts from the RB1101 Fundamentals of Robotics wall-following laboratory**, which provides the ROS 2 framework, LiDAR processing, and a basic wall-following controller.
 
-* If your wall-following with heading works, you should be able to escape the "G" and proceed forward after the G.
+Instead of rewriting the project from scratch, this repository incrementally extends the original architecture with more advanced perception, decision-making, mapping, and navigation capabilities.
 
-2. Implement wall-following with pledge such that the robot turns left or right as needed, and moves forward if the cumulative heading is equal to the initial heading. To test if this works, run Gazebo with the following shell script: \
-`cd ~/Documents/rb1101 && ./gz_pledge.sh` 
+The repository will continue to evolve as new robotics concepts are explored and implemented.
 
-* If your wall-following with pledge works, you should be able to escape the "G" and turn right after the G.
+---
 
-3. Ensure your implementation 
+# Base Project
 
-## References ##
-RANSAC algorithm from wall_following.py uses an adapted version from https://github.com/creminem94/Advanced-Wall-Following/tree/main. All credits for the RANSAC implementation to them.
+This project is **built upon the RB1101 Fundamentals of Robotics laboratory assignment**.
+
+The original laboratory provides:
+
+* ROS 2 workspace and package structure
+* Gazebo simulation environment
+* LiDAR (`LaserScan`) interface
+* RANSAC-based wall extraction
+* Wall orientation estimation
+* Basic wall-following controller
+* Robot motion interface (`cmd_vel`)
+
+The laboratory code serves as the **foundation** of this repository.
+
+Future improvements and extensions developed in this repository are my own work built on top of the original framework.
+
+---
+
+# Current Limitations
+
+At the current stage, the robot is primarily a **reactive wall-following robot**.
+
+### Current capabilities
+
+* Detect walls using LiDAR
+* Extract wall segments using RANSAC
+* Estimate wall orientation
+* Perform basic wall following
+* Avoid simple obstacles
+
+### Current limitations
+
+The robot **cannot currently**
+
+* build a map
+* localize itself
+* remember previously visited locations
+* plan a route
+* navigate toward a destination
+* understand rooms or doorways
+* recognize objects
+* perform semantic reasoning
+
+The controller only reacts to the current LiDAR observation and has no memory or understanding of the global environment.
+
+---
+
+# Development Roadmap
+
+The long-term goal is to gradually transform the system into an intelligent indoor navigation framework.
+
+## Level 1 — Reactive Navigation
+
+Status: 🚧 In Progress
+
+Possible improvements:
+
+* Finite State Machine (FSM)
+* Recovery behaviour
+* Adaptive speed control
+* Doorway detection
+* Improved corner handling
+* ---
+
+---
+
+## Level 2 — Environment Understanding
+
+Status: ☐ Planned
+
+Possible improvements:
+
+* Corridor detection
+* Room entrance detection
+* Corner classification
+* Local topology extraction
+* ---
+
+---
+
+## Level 3 — Mapping and Memory
+
+Status: ☐ Planned
+
+Possible improvements:
+
+* Topological mapping
+* Local memory
+* Landmark management
+* Graph representation
+* ---
+
+---
+
+## Level 4 — Navigation
+
+Status: ☐ Planned
+
+Possible improvements:
+
+* SLAM integration
+* Localization
+* Navigation2
+* A* path planning
+* Goal-directed navigation
+* ---
+
+---
+
+## Level 5 — Intelligent Autonomous Navigation
+
+Status: ☐ Planned
+
+Possible improvements:
+
+- User-defined target destination
+- Navigate to a specified location
+- Object-aware navigation
+- Dynamic obstacle avoidance
+- Task-oriented navigation
+
+---
+
+# Current Sprint
+
+Status: 🚧 Ongoing
+
+## Objective
+
+---
+
+## Planned Features
+
+* ---
+* ---
+* ---
+
+## Progress
+
+* [ ] Design
+* [ ] Implementation
+* [ ] Testing
+* [ ] Documentation
+
+---
+
+# Installation
+
+This project currently follows the RB1101 ROS 2 workspace structure.
+
+## 1. Build the workspace
+
+```bash
+cd ~/ros2-autonomous-indoor-navigation
+colcon build --symlink-install
+```
+
+## 2. Grant execution permission
+
+```bash
+chmod +x *.sh
+```
+
+Only required once for each machine.
+
+---
+
+# Running the Simulation
+
+Launch Gazebo
+
+```bash
+./gz_heading.sh
+```
+
+In another terminal
+
+```bash
+./wall_following.sh
+```
+
+For the physical robot, remember to set
+
+```python
+is_simulation = False
+```
+
+inside
+
+```text
+src/rb1101/wall_following.py
+```
+
+before deployment.
+
+---
+
+# Original RB1101 Laboratory Objectives
+
+The original laboratory required implementing:
+
+* Wall-following with heading correction
+* Pledge algorithm
+* Escape behaviour for enclosed environments
+
+These objectives formed the starting point of this repository.
+
+---
+
+# Repository Structure
+
+```text
+src/
+    ROS2 source packages
+
+docs/
+    Design notes
+
+images/
+    Figures
+
+videos/
+    Demonstration videos
+
+README.md
+
+LICENSE
+```
+
+---
+
+# Future Vision
+
+The ultimate objective of this repository is to bridge the gap between simple reactive navigation and high-level semantic robotics.
+
+The planned progression is
+
+Reactive Wall Following
+
+↓
+
+Environment Understanding
+
+↓
+
+Mapping
+
+↓
+
+Navigation
+
+↓
+
+Semantic Scene Representation
+
+↓
+
+Autonomous Task-Level Navigation
+
+The repository will continue to be updated as new robotics algorithms and research ideas are implemented.
+
+---
+
+# References
+
+* RB1101 Fundamentals of Robotics Laboratory Materials
+* Advanced Wall Following (RANSAC implementation): https://github.com/creminem94/Advanced-Wall-Following
