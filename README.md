@@ -19,7 +19,7 @@ The repository will continue to evolve as new robotics concepts are explored and
 ## Demo Video
 
 A demonstration of the robot simulation running in Gazebo with ROS 2, including robot control, sensor feedback, and autonomous navigation.
-[Watch Demo Video](demos/hydra_demo.mp4)
+[Watch Demo Video](demos/demo_basic.mp4)
 
 ---
 
