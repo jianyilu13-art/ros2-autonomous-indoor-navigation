@@ -14,6 +14,13 @@ Instead of rewriting the project from scratch, this repository incrementally ext
 
 The repository will continue to evolve as new robotics concepts are explored and implemented.
 
+# Demo
+
+## Demo Video
+
+A demonstration of the robot simulation running in Gazebo with ROS 2, including robot control, sensor feedback, and autonomous navigation.
+[Watch Demo Video](demos/hydra_demo.mp4)
+
 ---
 
 # Base Project
