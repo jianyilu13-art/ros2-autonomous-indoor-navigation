@@ -12,18 +12,18 @@ from rclpy.logging import set_logger_level, LoggingSeverity
 np.set_printoptions(2, suppress=True) # Print numpy arrays to specified d.p. and suppress scientific notation (e.g. 1e-5)
 set_logger_level("WallFollowingNode", level=LoggingSeverity.INFO) # Configure to either LoggingSeverity.DEBUG instead to print more details during run
 
-is_simulation = True
+is_simulation = False
 
 if is_simulation:
     # Simulation settings
     parameters=[
-        ('ransac.start_inliers', 15), # 25
-        ('ransac.inliers_decrease_factor', 5), # 3
-        ('ransac.max_iter', 20), # 100
-        ('ransac.point_distance_threshold', 0.03), # 0.01
+        ('ransac.start_inliers', 25), # 25
+        ('ransac.inliers_decrease_factor', 3), # 3
+        ('ransac.max_iter', 100), # 100
+        ('ransac.point_distance_threshold', 0.01), # 0.01
         ('translate_velocity', 0.8),
         ('translate_limit', 1.4),
-        ('turn_velocity', 1.4),
+        ('turn_velocity', 1.8),
         ('turn_limit', 2.8), 
         ('diagonal_x_threshold', (0.2, 0.5)), # (min, max) thresholds for wall detection on left/right/diagonal walls
         ('diagonal_y_threshold', (0.2, 0.5)), # (min, max) thresholds for wall detection on left/right/diagonal walls
@@ -38,10 +38,10 @@ if is_simulation:
 else:
     # IRL settings
     parameters=[
-        ('ransac.start_inliers', 15), # 25
-        ('ransac.inliers_decrease_factor', 5), # 3
-        ('ransac.max_iter', 20), # 100
-        ('ransac.point_distance_threshold', 0.03), # 0.01
+        ('ransac.start_inliers', 25), # 25
+        ('ransac.inliers_decrease_factor', 3), # 3
+        ('ransac.max_iter', 100), # 100
+        ('ransac.point_distance_threshold', 0.01), # 0.01
         ('translate_velocity', 0.2), # Feel free to toggle this speed, but be aware that the robot may miss walls at higher speeds
         ('translate_limit', 0.4), # DO NOT CHANGE THIS LIMIT; marks will be penalised for changing irl speed limits
         ('turn_velocity', 0.6),
@@ -120,6 +120,7 @@ class WallFollowingNode(Node):
         self.ransacLineParams = []
         self.cooldown = 0
         self.last_scan = None
+        self.count=0
 
         self.declare_parameters(namespace='', parameters=parameters)
 
@@ -211,6 +212,8 @@ class WallFollowingNode(Node):
                 y_condition = np.logical_and(diagonal_y_threshold[0] < abs(scan_slice[:,1]), abs(scan_slice[:,1]) < diagonal_y_threshold[1])
                 scans_within_sector_indices = np.logical_and(x_condition, y_condition)
             elif idx == 2 or idx == 6: # Left or right
+                scan_slice = scan_coordinates[idx*45-20:idx*45+20]
+
                 x_condition = np.abs(scan_slice[:,0]) < dimensions[0]
                 y_condition = np.abs(scan_slice[:,1]) < diagonal_y_threshold[1] * 1.3
                 scans_within_sector_indices = np.logical_and(x_condition, y_condition)
@@ -333,17 +336,36 @@ class WallFollowingNode(Node):
                     self.move_2D(0.1) # Move slowly to get closer to wall
 
         ###### INSERT CODE HERE ######
-        if wall_array[0]: # Wall in-front
-            self.get_logger().info("wall front, turn left")
-            self.turn_left_90deg()
 
-        elif wall_array[6]: # Wall right
-            self.get_logger().info("wall right, move forward")
+# Check the sensors in clockwise order (0 = front, 1 = front-right, ..., 7 = front-left)
+        if wall_array[0]:  # Front sensor detects a wall
+            self.get_logger().info("Wall detected at front, turning left.")
+            self.turn_left_90deg()
+            self.count += 90
+
+        elif wall_array[6]:  # Right sensor detects a wall
+            self.get_logger().info("Wall detected at right, moving forward.")
             self.move_forward(turn_offset=turn_offset, align=True)
 
-        else:
-            self.get_logger().info("Nothing detected, moving forward")
+    #   elif wall_array[4]:  # Back sensor detects a wall
+    #       self.get_logger().info("Wall detected at back, turning around.")
+    #       self.turn_left_180deg()  # Assuming a 180-degree turn
+    #       self.count += 180
+
+        elif wall_array[5]:  # Back sensor detects a wall
+            self.get_logger().info("Wall detected at back, turning around.")
+            self.turn_right_90deg()  # Assuming a 180-degree turn
+            self.count -= 90
+
+        elif self.count==0:
+    # No wall detected, moving forward
+            self.get_logger().info("No wall detected, moving forward.")
             self.move_forward(turn_offset=turn_offset)
+        else:
+            self.get_logger().info("Wall detected at left, turning right.")
+            self.turn_right_90deg()
+            self.count -= 90
+
         ##### INSERT CODE HERE ######
     
 def main(args=None):
@@ -358,4 +380,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
