@@ -41,6 +41,64 @@ The laboratory code serves as the **foundation** of this repository.
 
 Future improvements and extensions developed in this repository are my own work built on top of the original framework.
 
+## Pipline
+```
+                 ┌───────────────────┐
+                 │   LiDAR Sensor    │
+                 │   /scan topic     │
+                 └─────────┬─────────┘
+                           │
+                           ▼
+              ┌────────────────────────┐
+              │ sub_scan_callback()    │
+              │ Receive LaserScan data │
+              │ Convert to numpy array │
+              └──────────┬─────────────┘
+                         │
+                         ▼
+              ┌────────────────────────┐
+              │    timer_callback()    │
+              │     Main Control Loop  │
+              │        10 Hz            │
+              └──────────┬─────────────┘
+                         │
+          ┌──────────────┴───────────────┐
+          │                              │
+          ▼                              ▼
+ ┌─────────────────┐          ┌──────────────────┐
+ │ RANSAC Wall     │          │ Obstacle / Wall  │
+ │ Detection       │          │ Detection        │
+ └────────┬────────┘          └────────┬─────────┘
+          │                            │
+          ▼                            ▼
+ ┌─────────────────┐          ┌──────────────────┐
+ │ Wall angle      │          │ wall_array[8]    │
+ │ estimation      │          │ 8-direction      │
+ │ relative robot  │          │ occupancy        │
+ └────────┬────────┘          └────────┬─────────┘
+          │                            │
+          └──────────────┬─────────────┘
+                         │
+                         ▼
+              ┌────────────────────────┐
+              │ Navigation Decision    │
+              │ Rule-based Controller  │
+              └──────────┬─────────────┘
+                         │
+                         ▼
+              ┌────────────────────────┐
+              │ move_2D()              │
+              │ Publish Twist          │
+              │ /cmd_vel               │
+              └──────────┬─────────────┘
+                         │
+                         ▼
+              ┌────────────────────────┐
+              │ Mobile Robot Base      │
+              │ Motors / Simulation    │
+              └────────────────────────┘
+
+```
 ---
 
 # Current Limitations
@@ -71,6 +129,10 @@ The robot **cannot currently**
 The controller only reacts to the current LiDAR observation and has no memory or understanding of the global environment.
 
 ---
+## Limitation of the Pledge Algorithm
+
+The Pledge Algorithm is designed for maze escape, not goal reaching. It only follows a preferred direction and uses wall following to overcome obstacles, but it does not consider the target position. Therefore, even if the robot is facing the correct direction and there are no walls, it may continue moving straight and pass by the target without reaching it. For example, if the target is at (3,3) and the robot is at (2,2), moving north to (2,3) is correct according to the preferred direction, but the robot still needs to move east to reach the goal. This means Pledge alone is not suitable for point-to-point navigation.
+
 
 # Development Roadmap
 

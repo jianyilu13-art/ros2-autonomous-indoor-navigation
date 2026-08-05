@@ -120,6 +120,7 @@ class WallFollowingNode(Node):
         self.ransacLineParams = []
         self.cooldown = 0
         self.last_scan = None
+        self.count = 0
 
         self.declare_parameters(namespace='', parameters=parameters)
 
@@ -337,6 +338,7 @@ class WallFollowingNode(Node):
         if wall_array[0]: # Wall in-front
             self.get_logger().info("wall front, turn left")
             self.turn_left_90deg()
+            self.count += 90
 
         elif wall_array[6]: # Wall right
             self.get_logger().info("wall right, move forward")
@@ -344,10 +346,11 @@ class WallFollowingNode(Node):
 
         else:
             self.get_logger().info("Nothing detected, moving forward")
-            self.move_forward(turn_offset=turn_offset)
+            self.move_forward(turn_offset=turn_offset, align=True)
+
         ##### INSERT CODE HERE ######
     
-    
+
 def main(args=None):
     rclpy.init(args=args)
     wall_following_node = WallFollowingNode(parameters)
